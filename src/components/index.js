@@ -6,3 +6,6 @@ export { default as Header } from "./Header";
 export { default as Layout } from "../layout";
 export { default as Pagination } from "../components/Paginate";
 export { default as FilterField } from "../components/FilterField";
+export { default as PokemonData } from "../components/PokemonData";
+export { default as PokemonStat } from "../components/PokemonStat";
+export { default as PokemonEvolution } from "../components/PokemonEvolution";

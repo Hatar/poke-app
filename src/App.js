@@ -8,8 +8,8 @@ function App() {
       <Router>
         <Routes>
           <Route exact path="/" element={<HomePage />} />
-          <Route exact path="/types" element={<TypePage />} />
-          <Route exact path="/views" element={<ViewPage />} />
+          <Route exact path="/types/:pokemonId" element={<TypePage />} />
+          <Route exact path="/views/:type" element={<ViewPage />} />
         </Routes>
       </Router>
     </Fragment>

@@ -1,9 +1,12 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-function Card({ image, title, type }) {
+function Card({ id, image, title, type }) {
   return (
-    <div className="card p-3 my-3 mx-auto">
+    <Link
+      to={`/types/${id}`}
+      className="card p-3 my-3 mx-auto text-decoration-none"
+    >
       <img
         src={image}
         className="card-img-top"
@@ -11,12 +14,9 @@ function Card({ image, title, type }) {
         alt={title}
       />
       <div className="card-body">
-        <h5 className="card-title">{title}</h5>
-        <Link to="" className="btn btn-primary btn-sm">
-          {type}
-        </Link>
+        <h5 className="card-title text-dark">{title}</h5>
       </div>
-    </div>
+    </Link>
   );
 }
 

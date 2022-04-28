@@ -79,6 +79,7 @@ function Home() {
               <>
                 <Card
                   key={idx}
+                  id={item.id}
                   image={item.sprites.other.dream_world.front_default}
                   title={item.name}
                   type={item.types[0].type.name}
